@@ -4,7 +4,48 @@
 <title>GaeaProdEntry1</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="framework.css">
+<style>
+.header {
+    background-color: #42bd1C;
+    text-align: center;
+    padding: 20px;
+}
+  .footer {
+    background-color: #42bd1C;
+    text-align: center;
+    padding: 20px;
+  }
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #F2F2F2;
+    text-align: center;
+    padding: 14px 16px ;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.column {
+    float: left;
+    width: 33.33%;
+}
+.row:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px){
+    .column {
+        width: 100%;
+    }
+}
+</style>
 <script>
   function showHome() {
    document.getElementById("homecontent").style.display = "block";
@@ -24,7 +65,7 @@
    document.getElementById("aboutcontent").style.display = "block";
    document.getElementById("contactcontent").style.display = "none";
     }
-  
+
   function showContact() {
    document.getElementById("homecontent").style.display = "none";
    document.getElementById("servicecontent").style.display = "none";
@@ -53,18 +94,18 @@
     <h2>Home</h2>
     <p>This is where you are right now, This page will help you get around our page.</p>
   </div>
-  
+
   <div class="column">
     <h2>Services</h2>
     <p>This page will inform you about the services/products that we offer.</p>
   </div>
-  
+
   <div class="column">
     <h2>About</h2>
     <p>This page will teach you more about us as a company.</p>
   </div>
  </div>
-  
+
   <div class="row">
     <div class="column">
       <h2>Contact</h2>
@@ -72,25 +113,25 @@
     </div>
   </div>
   </div>
-        
+
   <div id="servicecontent">
     <div class="row">
   <div class="column">
     <h2>Website Creation</h2>
     <p>We design websites to clients specification, integrating any requested features.Routine maintenance and hosting comes as standard with all of the website packages we offer. </p>
   </div>
-  
+
   <div class="column">
     <h2>2D Graphic Design</h2>
     <p>We create Logos, Letter heads and any other graphical designs that you may request.</p>
   </div>
-  
+
   <div class="column">
     <h2>SEO</h2>
     <p>We do Search Engine Optimization for your website to maintain good standing in search engine results.</p>
   </div>
  </div>
-  
+
  <div class="row">
     <div class="column">
       <h2>Social Media Pages</h2>
@@ -98,7 +139,7 @@
     </div>
  </div>
   </div>
-  
+
   <div id="aboutcontent">
     <div class="row">
     <div class="column">
@@ -107,14 +148,22 @@
     </div>
   </div>
   </div>
-  
+
   <div id="contactcontent">
     <div class="row">
     <div class="column">
-      <h2>WIP</h2>
+      <h2>Contact Page</h2>
       <p> This page is not working yet, please check back later.</p>
     </div>
+    <div class="column">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf93uqCnIpPDax8PbdzJ0EIJJgLqq8GxrncxdPijn2AP_IvCQ/viewform?embedded=true" width="360" height="740" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
   </div>
   </div>
+
+  <div class="footer">
+    <p> Generic Footer</p>
+  </div>
+
  </body>
 </html>
