@@ -73,6 +73,35 @@
     font-size: 36px;
     margin-left: 50px;
 }
+.round-button{
+  min-width: 60px;
+  max-width:120px;
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  border-style: none;
+  color: white;
+  background-color: #3498db;
+  border-radius: 100%;
+  overflow: none;
+  text-align: center;
+  padding:0;
+}
+.round-button:before {
+  content:'';
+  display:inline-block;;
+  vertical-align:middle;
+  padding-top:100%;
+}
+span {
+  display:inline-block;
+  vertical-align:middle;
+  max-width:90%;
+}
+.round-button:active{
+  background-color: #2980b9;
+}
 @media screen and (max-width: 600px){
     .column {
         width: 100%;
@@ -204,9 +233,13 @@ document.getElementById("mySidenav") .style.width = "0";
 <p> side content </p>
 </div>
 
-<span style="font-size:30px;cursor:
+<div>
+  <button class="round-button">
+<span><span style="font-size:30px;cursor:
 pointer"onclick="openNav()">☰ open
-</span>
+</span></span></button>
+</div>
+
 
   <div class="footer">
     <p> Generic Footer</p>
