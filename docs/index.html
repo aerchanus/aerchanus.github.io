@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +53,6 @@
     transition: 0.5s;
     padding-top: 60px;
 }
-
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -61,11 +61,9 @@
     display: block;
     transition: 0.3s
 }
-
 .sidenav a:hover, .offcanvas a:focus{
     color: #f1f1f1;
 }
-
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -88,6 +86,8 @@
   text-align: center;
   padding:0;
 position: fixed;
+  bottom: 0;
+  right: 0;
   bottom: 10;
   right: 10;
 }
@@ -130,7 +130,6 @@ span {
    document.getElementById("aboutcontent").style.display = "block";
    document.getElementById("contactcontent").style.display = "none";
     }
-
   function showContact() {
    document.getElementById("homecontent").style.display = "none";
    document.getElementById("servicecontent").style.display = "none";
@@ -144,41 +143,34 @@ span {
 function closeNav() { 
 document.getElementById("mySidenav") .style.width = "0"; 
 }
-
 </script>
 </head>
 <body onload="showHome()">
-
 <div class="header">
   <h1>Gaea Productions</h1>
   <p>2021</p>
 </div>
-
 <div class="topnav">
   <a onclick="showHome()">Home</a>
   <a onclick="showServices()">Services</a>
   <a onclick="showAbout()">About</a>
   <a onclick="showContact()">Contact</a>
 </div>
-
   <div id="homecontent">
 <div class="row">
   <div class="column">
     <h2>Home</h2>
     <p>This is where you are right now, This page will help you get around our page.</p>
   </div>
-
   <div class="column">
     <h2>Services</h2>
     <p>This page will inform you about the services/products that we offer.</p>
   </div>
-
   <div class="column">
     <h2>About</h2>
     <p>This page will teach you more about us as a company.</p>
   </div>
  </div>
-
   <div class="row">
     <div class="column">
       <h2>Contact</h2>
@@ -186,25 +178,21 @@ document.getElementById("mySidenav") .style.width = "0";
     </div>
   </div>
   </div>
-
   <div id="servicecontent">
     <div class="row">
   <div class="column">
     <h2>Website Creation</h2>
     <p>We design websites to clients specification, integrating any requested features.Routine maintenance and hosting comes as standard with all of the website packages we offer. </p>
   </div>
-
   <div class="column">
     <h2>2D Graphic Design</h2>
     <p>We create Logos, Letter heads and any other graphical designs that you may request.</p>
   </div>
-
   <div class="column">
     <h2>SEO</h2>
     <p>We do Search Engine Optimization for your website to maintain good standing in search engine results.</p>
   </div>
  </div>
-
  <div class="row">
     <div class="column">
       <h2>Social Media Pages</h2>
@@ -212,7 +200,6 @@ document.getElementById("mySidenav") .style.width = "0";
     </div>
  </div>
   </div>
-
   <div id="aboutcontent">
     <div class="row">
     <div class="column">
@@ -221,7 +208,6 @@ document.getElementById("mySidenav") .style.width = "0";
     </div>
   </div>
   </div>
-
   <div id="contactcontent">
     <div class="row">
     <div class="column">
@@ -230,23 +216,18 @@ document.getElementById("mySidenav") .style.width = "0";
     </div>
   </div>
   </div>
-
 <div id="mySidenav" class="sidenav">
  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 <p> side content </p>
 </div>
-
 <div>
   <button class="round-button">
 <span><span style="font-size:30px;cursor:
-pointer;color: black;"onclick="openNav()">☰ open
+pointer"onclick="openNav()">☰ open
 </span></span></button>
 </div>
-
-
   <div class="footer">
     <p> Generic Footer</p>
   </div>
-
  </body>
 </html>
